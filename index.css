@@ -1,7 +1,88 @@
-.bg-color{
-    background-color: #087990;
+body {
+    font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", "MS PMincho", serif;
 }
 
-.main-text{
-    color:white
+.bg-color{
+    background-color: #8B3A2E;
+}
+
+.menu-title{
+color:#333333
+}
+
+.price-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* タブボタン */
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tab-button {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 2px solid #ccc;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #333333; /* 濃いグレー */
+    color: white;
+    border-color: #222222; /* さらに濃いグレー */
+    text-shadow: 0px 0px 0.5px white; /* 白抜きっぽい効果 */
+}
+
+/* 価格表 */
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.price-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.item {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.price {
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    background: #9C4F3C;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", "MS PMincho", serif;
 }
