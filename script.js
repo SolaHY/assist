@@ -110,6 +110,4 @@ document.addEventListener("DOMContentLoaded", function () {
         buttonGroup.forEach(btn => btn.classList.remove("active"));
         document.querySelector(`[onclick="filterPrices('${category}', '${type}')"]`).classList.add("active");
     };
-    filterPrices("ladies-all", "ladies");
-    filterPrices("mens-all", "mens");
-});
+    
